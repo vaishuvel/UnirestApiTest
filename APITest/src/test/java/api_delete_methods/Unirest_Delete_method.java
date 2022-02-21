@@ -20,17 +20,17 @@ public class Unirest_Delete_method {
 		System.out.println(response.getStatusText());
 		System.out.println(response.getBody());
 		
-//		InputStream stream= response.getRawBody();
-//		InputStreamReader reader = new InputStreamReader(stream);
-//		 BufferedReader buff =  new  BufferedReader(reader);
-//		   String line;
-//		   
-//		   StringBuffer buffer= new StringBuffer();
-//		   
-//		   while((line=buff.readLine())!=null) {
-//			   buffer.append(line);
-//		   }
-//		   
+		InputStream stream= response.getRawBody();
+		InputStreamReader reader = new InputStreamReader(stream);
+		 BufferedReader buff =  new  BufferedReader(reader);
+		   String line;
+		   
+		   StringBuffer buffer= new StringBuffer();
+		   
+		   while((line=buff.readLine())!=null) {
+			   buffer.append(line);
+		   }
+		   
 //		   System.out.println(buffer);
 	}
 
